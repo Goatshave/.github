@@ -1,0 +1,26 @@
+name: "Crew inquiry"
+description: "Share your interests and the responsibilities you would like to discuss."
+title: "[Crew] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a public conversation. No legal name, resume, or contact details are required.
+        Leave out personal information and vulnerability details.
+        Contributions need no membership; an inquiry or contribution does not automatically grant organization access.
+  - type: textarea
+    id: interests
+    attributes:
+      label: "Problem or project"
+      description: "What would you like to explore or improve with others?"
+    validations:
+      required: true
+  - type: textarea
+    id: role
+    attributes:
+      label: "Intended role and available scope"
+      description: "Code, documentation, testing, design, maintenance, or another contribution. No fixed hours are required."
+  - type: textarea
+    id: questions
+    attributes:
+      label: "Questions to discuss"

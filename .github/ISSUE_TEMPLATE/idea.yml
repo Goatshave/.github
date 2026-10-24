@@ -1,0 +1,27 @@
+name: "Problem or idea"
+description: "Suggest a problem without a project yet."
+title: "[Idea] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use an existing project's issue tracker for its questions and bugs.
+        For Open Grid: https://github.com/Goatshave/open-grid/issues
+        Do not post vulnerability details or personal information here.
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problem encountered"
+      description: "Who experiences this, and in what context?"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Attempts and evidence"
+      description: "Existing tools, reproduction steps, or references, if available."
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Possible next step"
+      description: "You do not need to have a solution yet."
